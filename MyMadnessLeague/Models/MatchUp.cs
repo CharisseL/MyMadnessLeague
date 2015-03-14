@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Data.Entity;
 
 namespace MyMadnessLeague.Models
 {
@@ -11,11 +12,11 @@ namespace MyMadnessLeague.Models
         public string Team1 { get; set; }
         public string Team2 { get; set; }
         public string MatchWinner { get; set; }
-
-        public MatchUp()
-        {
-
-        }
-
+    }
+        
+    public class MatchupsDBContext: DbContext
+    {
+        public DbSet<MatchUp> Matchups { get; set; }
     }
 }
+ 

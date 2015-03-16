@@ -11,7 +11,7 @@ namespace MyMadnessLeague.Models
         public int MatchUpId { get; set; }
         public string Team1 { get; set; }
         public string Team2 { get; set; }
-        public string MatchWinner { get; set; }
+        public string UserSelection{ get; set; }
     }
         
     public class MatchupsDBContext: DbContext

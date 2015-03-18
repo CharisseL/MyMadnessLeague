@@ -11,9 +11,8 @@ namespace MyMadnessLeague.Repository
     public interface IMatchUpRepository
     {
         //int GetMatchUp();
-        //void Add(MatchUp I);
-        //IEnumerable<MatchUp> PastMatchups();
-        //IEnumerable<MatchUp> All();
-        //IMatchUpRepository GetById(int id);
+        void Add(MatchUp Game);
+        IEnumerable<MatchUp> PastMatchups();
+        IEnumerable<MatchUp> All();
     }
 }

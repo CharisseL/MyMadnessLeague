@@ -25,5 +25,24 @@ namespace MyMadnessLeague.Repository
             return _dbContext;
         }
 
+        public DbSet<Models.MatchUp> GetDbSet()
+        {
+            return _dbContext.Matchups;
+        }
+
+        public void Add(Models.MatchUp Game)
+        {
+            _dbContext.Matchups.Add(Game);
+            _dbContext.SaveChanges();
+        }
+
+        public IEnumerable<Models.MatchUp> All()
+        {
+            var qu = from MatchUp in _dbContext.Matchups
+                     select MatchUp;
+            return qu.ToList<Models.MatchUp>();
+
+        }
+
     }
 }

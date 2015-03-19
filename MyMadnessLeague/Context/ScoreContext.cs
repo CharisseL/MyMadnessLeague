@@ -10,6 +10,6 @@ namespace MyMadnessLeague
 {
     public class ScoreContext : DbContext
     {
-            public DbSet<Score> Scores { get; set; }
+            public DbSet<Scoreboard> Scoreboards { get; set; }
     }
 }

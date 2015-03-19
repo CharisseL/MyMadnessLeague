@@ -187,7 +187,6 @@
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\MatchUp.cs" />
-    <Compile Include="Models\Score.cs" />
     <Compile Include="Models\Scoreboard.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository\IMatchUpRepository.cs" />
@@ -254,7 +253,6 @@
     <Content Include="Views\MatchUp\Index.cshtml" />
     <Content Include="Views\MatchUp\MakePicks.cshtml" />
     <Content Include="Views\Matchups\Create.cshtml" />
-    <Content Include="Views\Matchups\Delete.cshtml" />
     <Content Include="Views\Matchups\Details.cshtml" />
     <Content Include="Views\Matchups\Edit.cshtml" />
     <Content Include="Views\Matchups\Index.cshtml" />

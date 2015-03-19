@@ -8,13 +8,13 @@ namespace MyMadnessLeague.Models
 {
     public class Scoreboard
     {
-        public int ScoreboardId { get; set; }
+        public int ScoreboardID { get; set; }
         public string Player { get; set; }
-        public int  Score { get; set; }
+        public int  Player_Score { get; set; }
 
     }
     public class ScoreDBContext : DbContext
     {
-        public DbSet<Score> Scores { get; set; }
+        public DbSet<Scoreboard> Scoreboards { get; set; }
     }
 }

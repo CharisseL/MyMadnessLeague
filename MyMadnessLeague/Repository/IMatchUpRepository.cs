@@ -12,7 +12,7 @@ namespace MyMadnessLeague.Repository
     {
         //int GetMatchUp();
         void Add(MatchUp Game);
-        IEnumerable<MatchUp> PastMatchups();
+        //IEnumerable<MatchUp> PastMatchups();
         IEnumerable<MatchUp> All();
     }
 }
